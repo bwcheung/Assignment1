@@ -2,9 +2,11 @@ package com.example.travelclaims;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.app.DialogFragment;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class MainActivity extends Activity {
 
@@ -28,7 +30,7 @@ public class MainActivity extends Activity {
 	}
 	
 	public void newclaim(MenuItem menu) {
-		Intent intent = new Intent(MainActivity.this, New_claim.class);
+		Intent intent = new Intent(MainActivity.this, NewClaimActivity.class);
 		startActivity(intent);
 	}
 }

@@ -23,7 +23,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.travelclaims.New_claim"
+            android:name="com.example.travelclaims.NewClaimActivity"
             android:label="@string/title_activity_new_claim" >
         </activity>
     </application>

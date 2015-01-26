@@ -33,7 +33,7 @@
         android:layout_toRightOf="@+id/dateText"
         android:ems="10"
         android:inputType="date"
-        android:text="mm-dd-yyyy" >
+        android:onClick="showDatePickerDialog" >
 
         <requestFocus />
     </EditText>
@@ -47,7 +47,7 @@
         android:layout_toRightOf="@+id/EndDate"
         android:ems="10"
         android:inputType="date"
-        android:text="mm-dd-yyyy" />
+        android:onClick="showDatePickerDialog" />
 
     <TextView
         android:id="@+id/EndDate"
@@ -56,7 +56,7 @@
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/editDate"
         android:layout_marginTop="46dp"
-        android:text="End Date:"
+        android:text="@string/endDate"
         android:textSize="25sp" />
 
     <TextView
@@ -66,7 +66,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="96dp"
-        android:text="Claim:"
+        android:text="@string/claim"
         android:textSize="30sp" />
 
     <TextView
@@ -76,7 +76,7 @@
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/editClaim"
         android:layout_marginTop="45dp"
-        android:text="Start Date:"
+        android:text="@string/startDate"
         android:textSize="25sp" />
 
 </RelativeLayout>

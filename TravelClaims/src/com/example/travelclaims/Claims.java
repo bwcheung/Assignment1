@@ -5,12 +5,14 @@ import java.sql.Date;
 public class Claims {
 	
 	protected String Claim;
-	protected Date date;
+	protected Date startdate;
+	protected Date enddate;
 	protected String Status;
 	
-	public Claims(String Claim, Date date, String Status) {
+	public Claims(String Claim, Date startdate, Date enddate, String Status) {
 		this.Claim = Claim;
-		this.date = date;
+		this.startdate = startdate;
+		this.enddate = enddate;
 		this.Status = Status;
 	}
 	
@@ -18,8 +20,12 @@ public class Claims {
 		return this.Claim;
 	}
 	
-	public Date getDate() {
-		return this.date;
+	public Date getstartDate() {
+		return this.startdate;
+	}
+	
+	public Date getendDate() {
+		return this.enddate;
 	}
 	
 	public String getStatus() {
