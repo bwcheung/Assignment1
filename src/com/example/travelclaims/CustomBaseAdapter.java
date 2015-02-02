@@ -1,4 +1,11 @@
-// source from http://www.androidhive.info/2012/02/android-custom-listview-with-image-and-text/ -- Jan 31, 2015
+/* Assignment 1: TravelClaim
+ * Name: Brandon Cheung
+ * CCID: bwcheung
+ * Date: Feb 2, 2015
+ * LICENSE: APACHE 2.0 (read the Readme file)
+ * Source taken from: http://www.androidhive.info/2012/02/android-custom-listview-with-image-and-text/ -- Jan 31, 2015
+ * Description: This is a custom adapter that lets me show my claims in a custom listview.
+ */
 package com.example.travelclaims;
 
 import java.util.ArrayList;

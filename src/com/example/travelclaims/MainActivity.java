@@ -1,3 +1,13 @@
+/* Assignment 1: TravelClaim
+ * Name: Brandon Cheung
+ * CCID: bwcheung
+ * Date: Feb 2, 2015
+ * LICENSE: APACHE 2.0 (read the Readme file)
+ * Description: This activity is the main activity that shows the home page which will show the claim list. This activity handles
+ * on click event of each claims, which will go to the claim summary page. This activity also handles a context menu that will
+ * allow user to on long click edit, delete, change status, and email a claim. This is an incomplete code. Emailing and changing
+ * status is not covered
+ */
 package com.example.travelclaims;
 
 import java.util.ArrayList;
@@ -61,6 +71,7 @@ public class MainActivity extends Activity {
 		 int menuItemIndex = item.getItemId();
 		 String[] menuItems = getResources().getStringArray(R.array.menu_array);
 		 String menuItemName = menuItems[menuItemIndex];
+		 
 		 claim = (Claim) lv1.getItemAtPosition(info.position);
 		 ArrayList<Claim> claimslist = cl.getClaimList();
 		 
@@ -77,9 +88,9 @@ public class MainActivity extends Activity {
 				 startActivity(intent);
 			 }
 		 } else if (menuItemName.equals("Change Status")) {
-			  
+			  //Does not have a change status function
 		 } else if (menuItemName.equals("Email")) {
-			  
+			  //Does not have a email function
 		 }
 		 
 		

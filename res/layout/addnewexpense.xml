@@ -8,9 +8,9 @@
         android:id="@+id/categoryspinner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/currencyspinner"
         android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/category"
-        android:layout_toRightOf="@+id/category" />
+        android:layout_alignTop="@+id/category" />
 
     <Spinner
         android:id="@+id/currencyspinner"
@@ -46,7 +46,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="47dp"
-        android:text="@string/category"
+        android:text="@string/expense"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
@@ -94,5 +94,15 @@
         android:ems="10"
         android:hint="Add a Description"
         android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/expense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/category"
+        android:layout_alignBottom="@+id/category"
+        android:layout_toLeftOf="@+id/categoryspinner"
+        android:layout_toRightOf="@+id/category"
+        android:ems="10" />
 
 </RelativeLayout>

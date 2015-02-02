@@ -1,3 +1,12 @@
+/* Assignment 1: TravelClaim
+ * Name: Brandon Cheung
+ * CCID: bwcheung
+ * Date: Feb 2, 2015
+ * LICENSE: APACHE 2.0 (read the Readme file)
+ * Source taken from: http://developer.android.com/guide/topics/ui/controls/spinner.html, http://stackoverflow.com/questions/1947933/how-to-get-spinner-value
+ * Description: This activity handles adding a new claim. This activity uses spinners to allow the user to pick a category and currency. 
+ * It then gets these values and add them into the expense list along with other user inputs.
+ */
 package com.example.travelclaims;
 
 import java.util.ArrayList;
@@ -21,11 +30,12 @@ import android.widget.Toast;
 public class NewExpenseActivity extends FragmentActivity {
 
 	private static EditText DateView;
+	public static ArrayList<String> categorylist;
 	private EditText description;
-	private EditText cost; 
+	private EditText cost;
+	private EditText expense; 
 	public String category;
 	public String currency;
-	public static ArrayList<String> categorylist;
 	protected void onCreate(Bundle savedInstanceState) {
 		
 		super.onCreate(savedInstanceState);
@@ -115,12 +125,13 @@ public class NewExpenseActivity extends FragmentActivity {
 	}
 	
 	public void addExpense(View v) {
-		Toast.makeText(this, currency, Toast.LENGTH_SHORT).show();
+		Toast.makeText(this, "Adding Expense", Toast.LENGTH_SHORT).show();
 		description = (EditText) findViewById(R.id.editDescription2);
 		cost = (EditText) findViewById(R.id.editCost);
+		expense = (EditText) findViewById(R.id.expense);
 		Claim claim = MainActivity.claim;
-		claim.addExpense(new Expense(Integer.parseInt(cost.getText().toString()), 
-				DateView.getText().toString(), category.toString(), currency.toString(), description.getText().toString()));
+		claim.addExpense(new Expense(Integer.parseInt(cost.getText().toString()), DateView.getText().toString(), 
+				category.toString(), currency.toString(), description.getText().toString(), expense.getText().toString()));
 		Intent intent = new Intent(NewExpenseActivity.this, ClaimSummaryActivity.class);
 		startActivity(intent);
 		finish();

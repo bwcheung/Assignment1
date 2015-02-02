@@ -1,3 +1,11 @@
+/* Assignment 1: TravelClaim
+ * Name: Brandon Cheung
+ * CCID: bwcheung
+ * Date: Feb 2, 2015
+ * LICENSE: APACHE 2.0 (read the Readme file)
+ * Description: This is the claim class that creates an object called "claim" with attributes claim, startdate, enddate,
+ * status, description, and a list of expenses. This class will also return all these attributes.
+ */
 package com.example.travelclaims;
 
 import java.util.ArrayList;

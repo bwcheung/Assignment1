@@ -1,3 +1,13 @@
+/* Assignment 1: TravelClaim
+ * Name: Brandon Cheung
+ * CCID: bwcheung
+ * Date: Feb 2, 2015
+ * LICENSE: APACHE 2.0 (read the Readme file)
+ * Source taken from: http://www.androidhive.info/2012/02/android-custom-listview-with-image-and-text/ -- Jan 31, 2015
+ * Description: This is a custom adapter that lets me show my expenses in a custom listview. This is a incomplete code.
+ * Right now this will only handle showing the name of the expense and will not show anything else in the list like cost
+ * of each expense.
+ */
 package com.example.travelclaims;
 
 import java.util.ArrayList;
@@ -38,23 +48,20 @@ public class CustomExpenseListAdapter extends BaseAdapter {
 		if (convertView == null) {
 			convertView = mInflater.inflate(R.layout.customexpenselist, null);
 			holder = new ViewHolder();
-			holder.cost = (TextView) convertView.findViewById(R.id.customcost);
-			holder.category = (TextView) convertView.findViewById(R.id.customcategory);
+			holder.expense = (TextView) convertView.findViewById(R.id.customcategory);
 
 			convertView.setTag(holder);
 		} else {
 			holder = (ViewHolder) convertView.getTag();
 		}
 		
-		holder.cost.setText(ExpenseList.get(position).getCost());
-		holder.category.setText(ExpenseList.get(position).getCategory());
+		holder.expense.setText(ExpenseList.get(position).getExpense());
 		
 		return convertView;
 	}
 
 	static class ViewHolder {
-		TextView cost;
-		TextView category;
+		TextView expense;
 	}
 
 }

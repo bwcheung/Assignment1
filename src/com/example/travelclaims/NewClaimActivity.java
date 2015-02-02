@@ -1,5 +1,12 @@
-//source from http://www.truiton.com/2013/03/android-pick-date-time-from-edittext-onclick-event/ -- Jan 27, 2015
-
+/* Assignment 1: TravelClaim
+ * Name: Brandon Cheung
+ * CCID: bwcheung
+ * Date: Feb 2, 2015
+ * LICENSE: APACHE 2.0 (read the Readme file)
+ * Source taken from: http://www.truiton.com/2013/03/android-pick-date-time-from-edittext-onclick-event/ -- Jan 27, 2015
+ * Description: This activity handles adding a new claim. This activity uses the date picker to allow the user to pick a date
+ * without typing it in. This activity will handle all the user input and add it into the claim list.
+ */
 package com.example.travelclaims;
  
 import java.util.Calendar;
@@ -42,6 +49,7 @@ public class NewClaimActivity extends FragmentActivity {
 			 StartDateEdit.setText(MainActivity.claim.getStartDate(), TextView.BufferType.EDITABLE);
 			 EndDateEdit.setText(MainActivity.claim.getEndDate(), TextView.BufferType.EDITABLE);
 			 Description.setText(MainActivity.claim.getDescription(), TextView.BufferType.EDITABLE);
+			 MainActivity.edit = false;
 		 }
 		 set_on_click();
 	}
