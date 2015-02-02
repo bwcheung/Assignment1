@@ -32,7 +32,7 @@ public class ClaimSummaryActivity extends Activity {
 	public int totalGBP = 0;
 	
 	public ListView lv2;
-	public static ArrayList<Expense> expenseList;
+	public ArrayList<Expense> expenseList;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
