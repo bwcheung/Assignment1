@@ -1,25 +1,23 @@
 package com.example.travelclaims;
 
 import java.util.ArrayList;
-import java.util.Collection;
 
 public class ClaimList {
 	
-	protected ArrayList<Claims> claimslist;
+	protected static ArrayList<Claim> claimslist;
 	
-	public ClaimList() {
-		claimslist = new ArrayList<Claims>();
-	}
-
-	public Collection<Claims> getClaims() {
+	public ArrayList<Claim> getClaimList() {
+		if (claimslist == null) {
+			claimslist = new ArrayList<Claim>();
+		}
 		return claimslist;
 	}
 	
-	public void addClaim(Claims claim) {
+	public void addClaim(Claim claim) {
 		claimslist.add(claim);
 	}
 	
-	public void removeClaim(Claims claim) {
+	public void removeClaim(Claim claim) {
 		claimslist.remove(claim);
 	}
 	

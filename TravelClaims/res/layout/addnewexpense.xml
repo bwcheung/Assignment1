@@ -1,61 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/claimsummary"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <Button
-        android:id="@+id/addExpenseButton"
+    <Spinner
+        android:id="@+id/categoryspinner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:text="Add" />
+        android:layout_alignTop="@+id/category"
+        android:layout_toRightOf="@+id/category" />
 
-    <TextView
-        android:id="@+id/costText"
+    <Spinner
+        android:id="@+id/currencyspinner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/expenseText"
-        android:layout_marginTop="126dp"
-        android:text="Cost:"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textSize="30sp" />
-
-    <TextView
-        android:id="@+id/expenseText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="98dp"
-        android:text="Expense:"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textSize="30sp" />
-
-    <EditText
-        android:id="@+id/editExpense"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/expenseText"
-        android:layout_alignBottom="@+id/expenseText"
-        android:layout_toRightOf="@+id/expenseText"
-        android:ems="10"
-        android:inputType="text" >
-
-        <requestFocus />
-    </EditText>
+        android:layout_alignBottom="@+id/editCost"
+        android:layout_alignTop="@+id/editCost"
+        android:layout_toRightOf="@+id/editCost" />
 
     <EditText
         android:id="@+id/editCost"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/costText"
-        android:layout_alignBottom="@+id/costText"
+        android:layout_alignTop="@+id/textCost"
+        android:layout_toRightOf="@+id/textCost"
+        android:ems="7"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/category"
+        android:layout_marginTop="37dp"
+        android:text="@string/cost"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="47dp"
+        android:text="@string/category"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editCost"
+        android:layout_marginTop="36dp"
+        android:text="@string/date"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textDate"
+        android:layout_alignBottom="@+id/textDate"
         android:layout_alignParentRight="true"
-        android:layout_toRightOf="@+id/costText"
+        android:layout_toRightOf="@+id/textDate"
         android:ems="10"
-        android:inputType="numberDecimal" />
+        android:focusable="false" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/addbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:onClick="addExpense"
+        android:text="Add" />
+
+    <EditText
+        android:id="@+id/editDescription2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/addbutton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editDate"
+        android:ems="10"
+        android:hint="Add a Description"
+        android:inputType="textMultiLine" />
 
 </RelativeLayout>

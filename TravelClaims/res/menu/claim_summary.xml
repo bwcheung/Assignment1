@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.travelclaims.ClaimSummaryActivity" ><item
+        android:id="@+id/editExpenses"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Edit Expenses" xmlns:android="http://schemas.android.com/apk/res/android" android:onClick="newExpense"/>
+    
+
+</menu>
