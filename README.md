@@ -5,6 +5,9 @@ This app that allows you to keep track of your travels and the expenses occured 
 Some functions include adding, deleting, editing your claims and expenses, and calculate the total cost
 occured during you travels. This app will allow you to email such claims and expenses to yourself or others, but unfortunately this early version of the app cannot email just yet. Some bugs include not being able to see your expense list items and closing the app will lose all previous data.
 
+Demo - https://archive.org/details/bwcheung8_hotmail_Demo
+    *NOTE* Please ignore the currency popping up during the video. I was debugging with the function toast and forgot to delete those.
+
 ===
 
 Copyright 2014 Brandon Cheung

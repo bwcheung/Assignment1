@@ -48,8 +48,7 @@ public class CustomExpenseListAdapter extends BaseAdapter {
 		if (convertView == null) {
 			convertView = mInflater.inflate(R.layout.customexpenselist, null);
 			holder = new ViewHolder();
-			holder.expense = (TextView) convertView.findViewById(R.id.customcategory);
-
+			holder.expense = (TextView) convertView.findViewById(R.id.Expense);
 			convertView.setTag(holder);
 		} else {
 			holder = (ViewHolder) convertView.getTag();
@@ -62,6 +61,7 @@ public class CustomExpenseListAdapter extends BaseAdapter {
 
 	static class ViewHolder {
 		TextView expense;
+	
 	}
 
 }

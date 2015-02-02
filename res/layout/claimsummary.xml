@@ -109,7 +109,7 @@
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/expenseDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/totalcost"
@@ -124,7 +124,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/totalcost"
         android:layout_marginLeft="26dp"
-        android:layout_toRightOf="@+id/textView1"
+        android:layout_toRightOf="@+id/expenseDate"
         android:text="Medium Text"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -132,9 +132,9 @@
         android:id="@+id/CAD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView1"
-        android:layout_alignBottom="@+id/textView1"
-        android:layout_alignRight="@+id/textView1"
+        android:layout_alignBaseline="@+id/expenseDate"
+        android:layout_alignBottom="@+id/expenseDate"
+        android:layout_alignRight="@+id/expenseDate"
         android:layout_marginRight="32dp"
         android:text="@string/CAD"
         android:textAppearance="?android:attr/textAppearanceMedium" />
@@ -143,7 +143,7 @@
         android:id="@+id/TextView01"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
+        android:layout_below="@+id/expenseDate"
         android:layout_toLeftOf="@+id/CADcost"
         android:text="@string/equal"
         android:textAppearance="?android:attr/textAppearanceMedium" />

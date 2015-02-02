@@ -44,6 +44,7 @@ public final class R {
         public static final int EUR=0x7f09001b;
         public static final int EURcost=0x7f09001f;
         public static final int EndDate=0x7f090006;
+        public static final int Expense=0x7f090025;
         public static final int GBP=0x7f09001c;
         public static final int GBPcost=0x7f090020;
         public static final int NewClaim=0x7f09002c;
@@ -59,7 +60,6 @@ public final class R {
         public static final int categoryspinner=0x7f09000b;
         public static final int claimsummary=0x7f09000a;
         public static final int currencyspinner=0x7f09000c;
-        public static final int customcategory=0x7f090025;
         public static final int customclaim=0x7f090026;
         public static final int customdate=0x7f090027;
         public static final int customstatus=0x7f090028;
@@ -73,11 +73,11 @@ public final class R {
         public static final int editExpenses=0x7f09002a;
         public static final int editStartDate=0x7f090003;
         public static final int expense=0x7f090014;
+        public static final int expenseDate=0x7f090021;
         public static final int expenselist=0x7f090016;
         public static final int hello=0x7f090001;
         public static final int textCost=0x7f09000f;
         public static final int textDate=0x7f090010;
-        public static final int textView1=0x7f090021;
         public static final int textdescription=0x7f090018;
         public static final int titles=0x7f090017;
         public static final int totalcost=0x7f090015;

@@ -66,13 +66,10 @@ public class ClaimSummaryActivity extends Activity {
 				int cost = expenseList.get(i).getCost();
 				
 				if (currency.equals("CAD")) {
-					Toast.makeText(this, "CAD", Toast.LENGTH_SHORT).show();
 					totalCAD = totalCAD + cost;
 				} else if (currency.equals("USD")) {
-					Toast.makeText(this, "USD", Toast.LENGTH_SHORT).show();
 					totalUSD = totalUSD + cost;
 				} else if (currency.equals("EUR")) {
-					Toast.makeText(this, "EUR", Toast.LENGTH_SHORT).show();
 					totalEUR = totalEUR + cost;
 				} else {
 					totalGBP = totalGBP + cost;
@@ -100,7 +97,7 @@ public class ClaimSummaryActivity extends Activity {
 		 final ListView lv1 = (ListView) findViewById(R.id.expenselist);
 		 AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
 		 int menuItemIndex = item.getItemId();
-		 String[] menuItems = getResources().getStringArray(R.array.menu_array);
+		 String[] menuItems = getResources().getStringArray(R.array.expenseMenuArray);
 		 String menuItemName = menuItems[menuItemIndex];
 		 Expense expense = (Expense) lv1.getItemAtPosition(info.position);
 		 
